@@ -4,7 +4,7 @@ hr {border-color: #0275D8 !important;}
 
 h1, body {color: #4D4D50 !important;}
 
-p, label, input, textarea {font-size: 1.3em !important;}
+p, label, input, textarea, {font-size: 1.5em !important;}
 
 .myPhoto {
     
@@ -15,3 +15,25 @@ p, label, input, textarea {font-size: 1.3em !important;}
 }
 
 #menu {margin-bottom: 60px;}
+
+#social {
+    
+    background-color: #0275D8;
+    color: white;
+    padding-top: 10px;
+    
+    
+}
+
+i{
+    
+    font-size: 2em !important;
+    margin-right: 10px;
+    
+}
+
+.icon-hover:hover {color: #4D4D50;}
+
+.white-text {color: white;}
+
+#larger-text {font-size: 1.6em;}
