@@ -1,1 +1,16 @@
 body { padding-bottom: 70px; }
+
+hr {border-color: #0275D8 !important;}
+
+h1, body {color: #4D4D50 !important;}
+
+p, label, input, textarea {font-size: 1.3em !important;}
+
+.myPhoto {
+    
+    width: 250px;
+    height: 250px;
+    float: right;
+    border-radius: 50%;
+    
+}

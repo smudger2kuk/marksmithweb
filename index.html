@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
 
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#home">Home</a>
                     <a class="nav-item nav-link" href="#myWork">My Work</a>
                     <a class="nav-item nav-link" href="#contact">Get in Touch</a>
                     <a class="nav-item nav-link" href="#about">About Me</a>
@@ -44,20 +44,70 @@
         <div class="jumbotron" id="home">
         
             <h1>Hello there!</h1>
+            <img src="images/me.jpg" class="myPhoto">
             <p>I'm a Front-End Web Developer and make sites that are professional looking on any device. I utilise 
             modern development toolkits and techniques to produce feature-rich websites that are pleasing on the eye.</p>
             <p>This site is a showcase of my work and will be updated regularly with new projects. To find out more about me or to view my work have a look around the site. Also, feel free to get in touch!</p>
+            
             <p class="lead">
                 <a class="btn btn-primary btn-lg" href="#myWork" role="button">View my work</a>
             </p>
         </div>
         
-        <div class="container">
+        <div class="container-fluid">
         
-            <div id="myWork"></div>
-            <div id="contact"></div>
-            <div id="about"></div>
-            <div id="cv"></div>
+            <div class="container-fluid text-center" id="myWork">
+                
+                <h1 class="grey-text">My Work</h1>
+                
+            </div>
+            <hr>
+            <div class="container-fluid text-center" id="contact">
+            
+                <h1 class="grey-text">Contact Me</h1>
+                
+                <div class="container-fluid row">
+                
+                    <form class="col-md-7">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email"> 
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" placeholder="Your message"></textarea>   
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+                        <small id="emailHelp" class="form-text text-muted">*I'll never share your email with anyone else.</small>
+                    </form>
+                    
+                    <div class="col-md-5 text-left">
+                    
+                        <p>I'd love to hear from you. Whether you'd like to hear more about my work or would like help with your own site then feel free to get in touch and I'll get back to you ASAP.</p>
+                        
+                    </div>
+                
+                </div>
+                
+            </div>
+            <hr>
+            <div class="container-fluid text-center" id="about">
+            
+                <h1 class="grey-text">About Me</h1>
+                
+            </div>
+            <hr>
+            <div class="container-fluid text-center" id="cv">
+            
+                <h1 class="grey-text">CV</h1>
+                
+            </div>
             
         </div>
         
