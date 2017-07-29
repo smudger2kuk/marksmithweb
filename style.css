@@ -1,4 +1,4 @@
-body { padding-bottom: 70px; }
+body {padding-bottom: 70px;}
 
 hr {border-color: #0275D8 !important;}
 
@@ -10,7 +10,8 @@ p, label, input, textarea {font-size: 1.3em !important;}
     
     width: 250px;
     height: 250px;
-    float: right;
     border-radius: 50%;
     
 }
+
+#menu {margin-bottom: 60px;}
