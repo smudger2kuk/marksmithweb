@@ -80,18 +80,18 @@
                     <form class="col-md-7">
 
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email"> 
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required> 
                         </div>
 
                         <div class="form-group">
-                            <textarea class="form-control" id="message" placeholder="Your message"></textarea>   
+                            <textarea class="form-control" id="message" placeholder="Your message" required></textarea>   
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-envelope" aria-hidden="true"></i> <span id="larger-text">Send</span></button>
+                        <button action="contactForm.php" type="submit" class="btn btn-primary btn-block"><i class="fa fa-envelope" aria-hidden="true"></i> <span id="larger-text">Send</span></button>
 
                         <small id="emailHelp" class="form-text text-muted">*I'll never share your email with anyone else. That's a promise.</small>
                     </form>
