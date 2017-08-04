@@ -77,21 +77,21 @@
                 
                 <div class="container-fluid row">
                 
-                    <form class="col-md-7">
+                    <form id="form" class="col-md-7" action="contactForm.php" method="post">
 
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required> 
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required> 
                         </div>
 
                         <div class="form-group">
-                            <textarea class="form-control" id="message" placeholder="Your message" required></textarea>   
+                            <textarea class="form-control" name="message" id="message" placeholder="Your message" required></textarea>   
                         </div>
 
-                        <button action="contactForm.php" type="submit" class="btn btn-primary btn-block"><i class="fa fa-envelope" aria-hidden="true"></i> <span id="larger-text">Send</span></button>
+                        <button type="submit" id="submit" class="btn btn-primary btn-block"><i class="fa fa-envelope" aria-hidden="true"></i> <span id="larger-text">Send</span></button>
 
                         <small id="emailHelp" class="form-text text-muted">*I'll never share your email with anyone else. That's a promise.</small>
                     </form>
@@ -134,6 +134,28 @@
         
     </body>
     
-    <script></script>
+    <!--
+    <script>
+        
+        $(document).ready(function(){
+            
+            $("#submit").on("click", function(e){
+                
+                e.preventDefault();
+                
+                $.ajax({
+                    
+                    url: "contactForm.php",
+                    type:"POST",
+                    data: $("form").serialize(),
+                    success: function () {
+                        alert("form was submitted");
+                    }               
+                });
+            });
+        });
+    
+    </script>
+    -->
 
 </html>
